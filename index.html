@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Student E-Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/heroicons@2.1.1/css/heroicons.css"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div class="min-h-screen">
+
+        <nav class="bg-white shadow-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex">
+                        <div class="flex-shrink-0 flex items-center">
+                            <span class="text-xl font-bold text-blue-700">METRO STATE</span>
+                        </div>
+                        <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
+                            <a href="index.html" class="border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" aria-current="page">
+                                Dashboard
+                            </a>
+                            <a href="academics.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                Academics
+                            </a>
+                            <a href="finances.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                Finances
+                            </a>
+                            <a href="profile.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                My Profile
+                            </a>
+                            <a href="employment.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                Student Employment
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                        <span class="text-sm text-gray-600">Student Name</span>
+                        <a href="#" class="ml-4 text-sm text-gray-500 hover:text-gray-700">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="py-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold text-gray-900 mb-6">Welcome, Student</h1>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h2 class="text-lg font-semibold text-gray-900 mb-4">Action Items</h2>
+                        <ul class="space-y-3">
+                            <li class="flex items-start p-3 bg-red-50 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 w-6 h-6 text-red-600 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" /></svg>
+                                <div>
+                                    <span class="font-medium text-red-800">Registration Hold</span>
+                                    <p class="text-sm text-red-700">You have an outstanding balance. <a href="#" class="font-bold underline">Clear hold now</a></p>
+                                </div>
+                            </li>
+                            <li class="flex items-start p-3 bg-yellow-50 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 w-6 h-6 text-yellow-600 mr-3"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" /></svg>
+                                <div>
+                                    <span class="font-medium text-yellow-800">Registration Window</span>
+                                    <p class="text-sm text-yellow-700">Your window opens Oct 20, 2025.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h2 class="text-lg font-semibold text-gray-900 mb-4">Spring 2026 Schedule</h2>
+                        
+                        <div class="p-3 bg-gray-50 rounded-lg mb-4">
+                            <p class="text-sm font-medium text-gray-700">Today (Nov 9): <span class="text-gray-500">No classes scheduled.</span></p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <p class="font-semibold text-gray-800">ICS 499: Software Engr/Capstone</p>
+                                <p class="text-sm text-gray-600">Wed | 6:00pm - 9:20pm</p>
+                                <p class="text-sm text-gray-600">Online - Synchronous</p>
+                            </div>
+                            <div class="border-l-4 border-gray-400 pl-4">
+                                <p class="font-semibold text-gray-800">WKSP GRAD 81: Graduation Requirements</p>
+                                <p class="text-sm text-gray-600">n/a (0.0 Cr)</p>
+                                <p class="text-sm text-gray-600">Online - Asynchronous</p>
+                            </div>
+                        </div>
+                        <a href="schedule.html" class="inline-block mt-6 bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-lg hover:bg-blue-200">
+                            View/Modify Full Schedule
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h2 class="text-lg font-semibold text-gray-900 mb-4">Academic Progress</h2>
+                        <p class="text-sm text-gray-600 mb-2">Computer Information Technology (BS)</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-2">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4">You are 75% complete with your major.</p>
+                        <a href="audit.html" class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-lg hover:bg-blue-200">
+                            View Degree Audit
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h2 class="text-lg font-semibold text-gray-900 mb-4">Financial Summary</h2>
+                        <p class="text-sm text-gray-600">Total Account Balance:</p>
+                        <p class="text-4xl font-bold text-gray-900 mb-4">$17.38</p>
+                        <p class="text-sm text-gray-500 mb-4">Spring 2026 Aid: $17.38</p>
+                        <a href="finances.html" class="inline-block bg-green-600 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-green-700">
+                            Make a Payment
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+    </div></body>
+</html>

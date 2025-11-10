@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degree Audit - Student E-Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div class="min-h-screen">
+
+        <nav class="bg-white shadow-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex">
+                        <div class="flex-shrink-0 flex items-center">
+                            <span class="text-xl font-bold text-blue-700">METRO STATE</span>
+                        </div>
+                        <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
+                            <a href="index.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                Dashboard
+                            </a>
+                            <a href="academics.html" class="border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" aria-current="page">
+                                Academics
+                            </a>
+                            <a href="finances.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                Finances
+                            </a>
+                            <a href="profile.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                My Profile
+                            </a>
+                            <a href="employment.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                Student Employment
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                        <span class="text-sm text-gray-600">Student Name</span>
+                        <a href="#" class="ml-4 text-sm text-gray-500 hover:text-gray-700">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="py-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col lg:flex-row lg:space-x-8">
+
+                    <nav class="lg:w-1/4 mb-6 lg:mb-0">
+                        <div class="sticky top-10">
+                            <h2 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Plan & Register</h2>
+                            <ul class="space-y-1 mb-6">
+                                <li><a href="search.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">Search for a Course</a></li>
+                                <li><a href="schedule-builder.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">Schedule Builder</a></li>
+                                <li><a href="plan.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">Review My Plan</a></li>
+                                <li><a href="quick-add.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">Register (Quick Add)</a></li>
+                                <li><a href="schedule.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">View/Modify Schedule</a></li>
+                            </ul>
+                            
+                            <h2 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">My Progress</h2>
+                            <ul class="space-y-1 mb-6">
+                                <li><a href="audit.html" class="block px-3 py-2 rounded-md text-sm font-medium text-white bg-blue-600">Degree Audit</a></li>
+                                <li><a href="planner.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">Graduation Planner</a></li>
+                                <li><a href="transcripts.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">Unofficial Transcripts</a></li>
+                                <li><a href="grades.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">Check Grades</a></li>
+                                <li><a href="transfer.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">Transfer Review</a></li>
+                            </ul>
+                            
+                            <h2 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Academic Status</h2>
+                            <ul class="space-y-1">
+                                <li><a href="holds.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">Registration Holds</a></li>
+                                <li><a href="window.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">Registration Window</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="lg:w-3/4">
+                        
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <h1 class="text-3xl font-bold text-gray-900">Degree Audit</h1>
+                                <div class="mt-2 text-sm text-gray-600">
+                                    <p><strong>Major:</strong> Computer Information Technology (BS)</p>
+                                    <p><strong>Advisor:</strong> Advisor</p>
+                                </div>
+                            </div>
+                            <a href="#" class="inline-block bg-white text-gray-700 border border-gray-300 text-sm font-medium px-4 py-2 rounded-lg hover:bg-gray-50">
+                                Download PDF Report
+                            </a>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+                            <h2 class="text-lg font-semibold text-gray-900 mb-4">Program Progress</h2>
+                            <div class="w-full bg-gray-200 rounded-full h-4 mb-2">
+                                <div class="bg-blue-600 h-4 rounded-full" style="width: 75%"></div>
+                            </div>
+                            <p class="text-sm text-gray-600">You are **75%** complete with your major requirements.</p>
+                        </div>
+
+                        <div class="space-y-4">
+
+                            <div x-data="{ open: true }" class="bg-white rounded-xl shadow-lg">
+                                <button @click="open = !open" class="flex justify-between items-center w-full p-6 text-lg font-semibold text-gray-900">
+                                    <span>Core Requirements</span>
+                                    <svg :class="{'rotate-180': open}" class="w-6 h-6 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+                                </button>
+                                <div x-show="open" x-transition class="px-6 pb-6 pt-0 space-y-3">
+                                    <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                        <div class="flex-shrink-0"><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Completed</span></div>
+                                        <div class="ml-4"><p class="text-sm font-medium text-gray-700">ICS 240: Web Programming</p></div>
+                                    </div>
+                                    <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                        <div class="flex-shrink-0"><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Completed</span></div>
+                                        <div class="ml-4"><p class="text-sm font-medium text-gray-700">ICS 372: Software Design</p></div>
+                                    </div>
+                                    <div class="flex items-center p-3 bg-blue-50 rounded-lg">
+                                        <div class="flex-shrink-0"><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">In-Progress</span></div>
+                                        <div class="ml-4"><p class="text-sm font-medium text-blue-700">ICS 499: Software Engineering and Capstone Project</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div x-data="{ open: false }" class="bg-white rounded-xl shadow-lg">
+                                <button @click="open = !open" class="flex justify-between items-center w-full p-6 text-lg font-semibold text-gray-900">
+                                    <span>Major Electives (6 of 9 Credits)</span>
+                                    <svg :class="{'rotate-180': open}" class="w-6 h-6 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+                                </button>
+                                <div x-show="open" x-transition class="px-6 pb-6 pt-0 space-y-3">
+                                    <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                        <div class="flex-shrink-0"><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Completed</span></div>
+                                        <div class="ml-4"><p class="text-sm font-medium text-gray-700">ICS 460: Database Design</p></div>
+                                    </div>
+                                    <div class="flex items-center p-3 bg-red-50 rounded-lg">
+                                        <div class="flex-shrink-0"><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Not Started</span></div>
+                                        <div class="ml-4"><p class="text-sm font-medium text-red-700">1 Course (3 Credits) Needed</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div x-data="{ open: false }" class="bg-white rounded-xl shadow-lg">
+                                <button @click="open = !open" class="flex justify-between items-center w-full p-6 text-lg font-semibold text-gray-900">
+                                    <span>General Education (Completed)</span>
+                                    <svg :class="{'rotate-180': open}" class="w-6 h-6 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+                                </button>
+                                <div x-show="open" x-transition class="px-6 pb-6 pt-0">
+                                    <p class="text-sm text-gray-600">All General Education requirements are met.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+    </div></body>
+</html>

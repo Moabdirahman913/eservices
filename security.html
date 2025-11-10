@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security & Notifications - My Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div class="min-h-screen">
+
+        <nav class="bg-white shadow-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex">
+                        <div class="flex-shrink-0 flex items-center">
+                            <span class="text-xl font-bold text-blue-700">METRO STATE</span>
+                        </div>
+                        <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
+                            <a href="index.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                Dashboard
+                            </a>
+                            <a href="academics.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                Academics
+                            </a>
+                            <a href="finances.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                Finances
+                            </a>
+                            <a href="profile.html" class="border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" aria-current="page">
+                                My Profile
+                            </a>
+                            <a href="employment.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                Student Employment
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                        <span class="text-sm text-gray-600">Student Name</span>
+                        <a href="#" class="ml-4 text-sm text-gray-500 hover:text-gray-700">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="py-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold text-gray-900 mb-6">My Profile</h1>
+
+                <div class="flex flex-col lg:flex-row lg:space-x-8">
+
+                    <nav class="lg:w-1/4 mb-6 lg:mb-0">
+                        <div class="sticky top-10">
+                            <ul class="space-y-1">
+                                <li><a href="profile.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">Personal Info</a></li>
+                                <li><a href="demographics.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">Demographic Info</a></li>
+                                <li><a href="emergency-contacts.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">Emergency Contacts</a></li>
+                                <li><a href="security.html" class="block px-3 py-2 rounded-md text-sm font-medium text-white bg-blue-600">Security & Notifications</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="lg:w-3/4 space-y-6">
+                        <div class="bg-white rounded-xl shadow-lg p-6">
+                            <h2 class="text-lg font-semibold text-gray-900 mb-6">Security</h2>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm font-medium text-gray-700">StarID Password</p>
+                                    <p class="text-sm text-gray-500">Last changed: Oct 1, 2025</p>
+                                </div>
+                                <a href="#" target="_blank" class="inline-block bg-white text-gray-700 border border-gray-300 text-sm font-medium px-4 py-2 rounded-lg hover:bg-gray-50">
+                                    Change Password (external)
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-xl shadow-lg p-6" x-data="{ texts: true, forms: false }">
+                            <h2 class="text-lg font-semibold text-gray-900 mb-6">Notification Preferences (Opt In/Out)</h2>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <label for="texts" class="text-sm font-medium text-gray-700">Turn Text Messaging On or Off</label>
+                                    <button @click="texts = !texts" :class="texts ? 'bg-blue-600' : 'bg-gray-200'" class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none">
+                                        <span :class="texts ? 'translate-x-5' : 'translate-x-0'" class="inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+                                    </button>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <label for="forms" class="text-sm font-medium text-gray-700">Receive Tax Forms (1098-T, W-2) Electronically</label>
+                                    <button @click="forms = !forms" :class="forms ? 'bg-blue-600' : 'bg-gray-200'" class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none">
+                                        <span :class="forms ? 'translate-x-5' : 'translate-x-0'" class="inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+                                    </button>
+                                </div>
+                                <p x-show="!forms" class="text-sm text-yellow-700 p-3 bg-yellow-50 rounded-lg">By opting out, you will receive paper copies of your tax forms in the mail.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+    </div></body>
+</html>

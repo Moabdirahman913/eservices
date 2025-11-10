@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Contacts - My Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div class="min-h-screen">
+
+        <nav class="bg-white shadow-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex">
+                        <div class="flex-shrink-0 flex items-center">
+                            <span class="text-xl font-bold text-blue-700">METRO STATE</span>
+                        </div>
+                        <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
+                            <a href="index.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                Dashboard
+                            </a>
+                            <a href="academics.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                Academics
+                            </a>
+                            <a href="finances.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                Finances
+                            </a>
+                            <a href="profile.html" class="border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" aria-current="page">
+                                My Profile
+                            </a>
+                            <a href="employment.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                Student Employment
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                        <span class="text-sm text-gray-600">Student Name</span>
+                        <a href="#" class="ml-4 text-sm text-gray-500 hover:text-gray-700">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="py-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold text-gray-900 mb-6">My Profile</h1>
+
+                <div class="flex flex-col lg:flex-row lg:space-x-8">
+
+                    <nav class="lg:w-1/4 mb-6 lg:mb-0">
+                        <div class="sticky top-10">
+                            <ul class="space-y-1">
+                                <li><a href="profile.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">Personal Info</a></li>
+                                <li><a href="demographics.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">Demographic Info</a></li>
+                                <li><a href="emergency-contacts.html" class="block px-3 py-2 rounded-md text-sm font-medium text-white bg-blue-600">Emergency Contacts</a></li>
+                                <li><a href="security.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-200">Security & Notifications</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="lg:w-3/4">
+                        <div class="bg-white rounded-xl shadow-lg p-6">
+                            <div class="flex justify-between items-center mb-6">
+                                <h2 class="text-lg font-semibold text-gray-900">Emergency Contacts</h2>
+                                <button type="button" class="inline-block bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-blue-700">
+                                    + Add Contact
+                                </button>
+                            </div>
+                            
+                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <p class="text-base font-semibold text-gray-800">Jane Doe</p>
+                                        <p class="text-sm text-gray-600">Mother</p>
+                                    </div>
+                                    <div class="flex space-x-3">
+                                        <a href="#" class="text-sm font-medium text-blue-600 hover:text-blue-500">Edit</a>
+                                        <a href="#" class="text-sm font-medium text-red-600 hover:text-red-500">Delete</a>
+                                    </div>
+                                </div>
+                                <div class="mt-3 border-t pt-3">
+                                    <p class="text-sm text-gray-700"><strong>Phone:</strong> (555) 123-4567</p>
+                                    <p class="text-sm text-gray-700"><strong>Address:</strong> 1234 University Ave, Minneapolis, MN</p>
+                                </div>
+                            </div>
+                            
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+    </div></body>
+</html>
